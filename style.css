@@ -23,13 +23,13 @@ body {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-
 }
 
 .titulo-principal{
-    text-align: left;
+    text-align: center;
     width: 100%;
     font-size: 32px;
+    margin: 70px
 }
 
 .titulo-principal span{
@@ -65,7 +65,6 @@ body {
     border-bottom: 4px solid var(--verde);
 }
 
-
 .abas-textos{
     background-color: var(--texto-fundo);
     padding: 40px;
@@ -91,6 +90,29 @@ body {
     text-transform: uppercase;
 }
 
+.contador{
+   display:flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
+
+.contador-digito-numero{
+    font-size: 80px;
+    margin:0;
+}
+
+.contador-digito-texto{
+    color: var(--verde);
+    font-size: 20px;
+    margin:0;
+}
+
+
 @media screen and (min-width: 768px) {
     .botoes{
         display: flex ;
@@ -101,5 +123,4 @@ body {
     .botao:last-child{
         border-radius: 0 40px 0 0;
     }
-
 }
